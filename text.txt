@@ -1,0 +1,5 @@
+import { Link } from "react-router-dom";
+	
+    <Link to="/">AllMeetup</Link> |{" "}
+      <Link to="/favorite">Favorites</Link> |{" "}
+      <Link to="/new-meetup">NewMeetup</Link>

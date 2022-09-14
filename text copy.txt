@@ -1,0 +1,192 @@
+<template>
+  <div class="main-container">
+    <div class="sub-container flex-wrap">
+      <div class="text-container left-text">
+        <p>
+          The Africa Continental Free Trade <br />
+          Agreement (AfCFTA) created the <br />
+          world’s largest connected free trade <br />
+          area when trading under the deal <br />
+          officially commenced on 1st January <br />
+          2021.
+        </p>
+      </div>
+      <div class="img-container left-shift">
+        <img src="../static/Rectangle 7.svg" alt="map" class="img-1" />
+      </div>
+    </div>
+    <div class="sub-container flex-wrap">
+      <div class="img-container right-shift">
+        <img src="../static/Rectangle 14.svg" alt="map" class="img-2" />
+      </div>
+      <div class="text-container right-text">
+        <p>
+          Because we live in technological times, <br />
+          the AfCFTA Secretariat has partnered <br />
+          with AfroChampions, governments <br />
+          and industry to launch this digital <br />
+          “AfCFTA Hub” platform.
+        </p>
+      </div>
+    </div>
+    <div class="sub-container flex-wrap">
+      <div class="text-container left-text">
+        <p>
+          For the first time, a single electronic <br />
+          gateway is connecting e-government <br />
+          portals, business & consumer apps and <br />
+          supranational platforms into one <br />
+          continental ecosystem.
+        </p>
+      </div>
+      <div class="img-container left-shift">
+        <img src="../static/Rectangle 13.svg" alt="map" class="img-3" />
+      </div>
+    </div>
+    <div class="sub-container flex-wrap">
+      <div class="img-container right-shift">
+        <img src="../static/Rectangle 15.svg" alt="map" class="img-4" />
+      </div>
+      <div class="text-container right-text">
+        <p>
+          By building trust across channels <br />
+          and networks, the AfCFTA Hub will <br />
+          simplify AfCFTA for SMEs and startups, <br />
+          level the playing field in <br />
+          e-commerce & e-logistics so everyone <br />
+          can participate and benefit, crush <br />
+          fraud, bind the common market <br />
+          together. Thus delivering prosperity to <br />
+          every fingertip, doorstep and hilltop.
+          <br />
+          <br />
+          <span>
+            Everyone is welcome to use the <br />
+            AfCFTA Hub to make all of AfCFTA’s <br />
+            many promises of African success and <br />
+            victory their own.
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {}
+</script>
+
+<style scoped>
+.main-container {
+  padding: 2rem 0rem;
+  width: 100%;
+  height: 100%;
+}
+
+/* SUB CONTAINER STYLES */
+.flex-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+}
+
+/* TEXT CONTAINER STYLES */
+.sub-container .text-container {
+  width: calc(100% - 700px);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sub-container .text-container p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+/* IMAGE CONTAINER STYLES */
+.sub-container .img-container {
+  max-width: 700px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sub-container .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+@media screen and (min-width: 425px), (max-width: 425px) {
+  .sub-container .text-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .flex-wrap {
+    flex-direction: row;
+  }
+
+  .sub-container .text-container {
+    width: calc(100% - 400px);
+    display: flex;
+    padding: 1rem;
+  }
+
+  .sub-container .img-container {
+    max-width: 400px;
+  }
+
+  .sub-container .img-container img {
+    width: 100%;
+    height: 324px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .flex-wrap {
+    flex-direction: row;
+  }
+
+  .sub-container .text-container {
+    width: calc(100% - 700px);
+    display: flex;
+  }
+  .sub-container .left-text {
+    margin-right: 4rem;
+  }
+
+  .sub-container .right-text {
+    margin-left: 4rem;
+  }
+
+  .sub-container .img-container {
+    padding: 1rem;
+    max-width: 700px;
+  }
+
+  .sub-container .left-shift {
+    right: 70px;
+  }
+
+  .sub-container .right-shift {
+    left: 70px;
+  }
+
+  .sub-container .img-container img {
+    width: 100%;
+    height: 524px;
+  }
+}
+</style>
